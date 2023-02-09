@@ -3,8 +3,9 @@
 // }
 
 function reverseString(s) {
-  let arr = s.split();
-  return toString(arr.reverse());
+  let arr = s.split("");
+  let rev = arr.reverse();
+  return rev.join("");
 }
 
 // module.exports = capitalize;
