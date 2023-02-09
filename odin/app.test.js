@@ -13,3 +13,8 @@ const reverseString = require("./app");
 test("returns string reversed", () => {
   expect(reverseString("String")).toBe("gnirtS");
 });
+test("returns string reversed", () => {
+  expect(reverseString("This is Ian and I am reversed")).toBe(
+    "desrever ma I dna naI si sihT"
+  );
+});
