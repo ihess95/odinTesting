@@ -1,11 +1,15 @@
-const capitalize = require("./app");
+const func = require("./app");
 
 test("makes first letter capitalized", () => {
-  expect(capitalize("string")).toBe("String");
+  expect(func("string")).toBe("String");
 });
 
 test("makes first letter capitalized", () => {
-  expect(
-    capitalize("this is a string with the first letter capitalized.")
-  ).toBe("This is a string with the first letter capitalized.");
+  expect(func("this is a string with the first letter capitalized.")).toBe(
+    "This is a string with the first letter capitalized."
+  );
+});
+
+test("returns string reversed", () => {
+  expect(func("String").toBe("gnirtS"));
 });
