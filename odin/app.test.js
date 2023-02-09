@@ -1,4 +1,4 @@
-const reverseString = require("./app");
+const calculator = require("./app");
 
 // test("makes first letter capitalized", () => {
 //   expect(func("string")).toBe("String");
@@ -10,11 +10,15 @@ const reverseString = require("./app");
 //   );
 // });
 
-test("returns string reversed", () => {
-  expect(reverseString("String")).toBe("gnirtS");
-});
-test("returns string reversed", () => {
-  expect(reverseString("This is Ian and I am reversed")).toBe(
-    "desrever ma I dna naI si sihT"
-  );
+// test("returns string reversed", () => {
+//   expect(reverseString("String")).toBe("gnirtS");
+// });
+// test("returns string reversed", () => {
+//   expect(reverseString("This is Ian and I am reversed")).toBe(
+//     "desrever ma I dna naI si sihT"
+//   );
+// });
+
+test("returns the math asked for", () => {
+  expect(calculator(10, 3, "+")).toBe(13);
 });
