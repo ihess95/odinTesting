@@ -41,3 +41,9 @@ test("returns input shifted by 1", () => {
 test("returns input shifted by 1, testing case sensitivity", () => {
   expect(cipher("Caesar", 1)).toBe("Dbftbs");
 });
+test("returns input shifted by 1, testing puncutation", () => {
+  expect(cipher("Caesar.r", 1)).toBe("Dbftbs,s");
+});
+test("returns input shifted by 5", () => {
+  expect(cipher("Caesar.r", 5)).toBe("Hfjxfwbw");
+});

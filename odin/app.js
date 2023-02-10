@@ -23,7 +23,7 @@
 // }
 
 function cipher(input, offset) {
-  const alpha = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  const alpha = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ.,!?";
   let shifted = "";
   let output = "";
   for (let i = 0; i < alpha.length; i++) {
