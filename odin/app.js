@@ -25,11 +25,16 @@
 function cipher(input, offset) {
   const alpha = "abcdefghijklmnopqrstuvwxyz";
   let shifted = "";
+  let output = "";
   for (let i = 0; i < alpha.length; i++) {
-    let n = (i + offset) % alphabet.length;
+    let n = (i + offset) % alpha.length;
     shifted += alpha[n];
   }
-  return input;
+  for (let j = 0; j < input.length; j++) {
+    let index = alpha.indexOf(input[j]);
+    output += shifted[index];
+  }
+  return output;
 }
 
 // module.exports = capitalize;

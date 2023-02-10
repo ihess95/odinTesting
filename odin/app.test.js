@@ -36,5 +36,5 @@ test("returns input unchanged", () => {
   expect(cipher("caesar", 0)).toBe("caesar");
 });
 test("returns input shifted by 1", () => {
-  expect(cipher("caesar", 1)).toBe("caesar");
+  expect(cipher("caesar", 1)).toBe("dbftbs");
 });
