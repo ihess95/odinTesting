@@ -38,3 +38,6 @@ test("returns input unchanged", () => {
 test("returns input shifted by 1", () => {
   expect(cipher("caesar", 1)).toBe("dbftbs");
 });
+test("returns input shifted by 1, testing case sensitivity", () => {
+  expect(cipher("Caesar", 1)).toBe("Dbftbs");
+});
