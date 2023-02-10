@@ -8,20 +8,23 @@
 //   return rev.join("");
 // }
 
-function calculator(a, b, op) {
-  if (op === "+") {
-    return a + b;
-  } else if (op === "-") {
-    return a - b;
-  } else if (op === "*") {
-    return a * b;
-  } else if (op === "/") {
-    return a / b;
-  } else {
-    return "Error";
-  }
-}
+// function calculator(a, b, op) {
+//   if (op === "+") {
+//     return a + b;
+//   } else if (op === "-") {
+//     return a - b;
+//   } else if (op === "*") {
+//     return a * b;
+//   } else if (op === "/") {
+//     return a / b;
+//   } else {
+//     return "Error";
+//   }
+// }
+
+function cipher(input, offset) {}
 
 // module.exports = capitalize;
 // module.exports = reverseString;
-module.exports = calculator;
+// module.exports = calculator;
+module.exports = cipher;
