@@ -22,22 +22,40 @@
 //   }
 // }
 
-function cipher(input, offset) {
-  const alpha = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ.,!?";
-  let shifted = "";
-  let output = "";
-  for (let i = 0; i < alpha.length; i++) {
-    let n = (i + offset) % alpha.length;
-    shifted += alpha[n];
-  }
-  for (let j = 0; j < input.length; j++) {
-    let index = alpha.indexOf(input[j]);
-    output += shifted[index];
-  }
-  return output;
+// function cipher(input, offset) {
+//   const alpha = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ.,!?";
+//   let shifted = "";
+//   let output = "";
+//   for (let i = 0; i < alpha.length; i++) {
+//     let n = (i + offset) % alpha.length;
+//     shifted += alpha[n];
+//   }
+//   for (let j = 0; j < input.length; j++) {
+//     let index = alpha.indexOf(input[j]);
+//     output += shifted[index];
+//   }
+//   return output;
+// }
+
+function analyzeArray(arr) {
+  let total = 0;
+  let count = 0;
+  arr.forEach(function (item, index) {
+    total += item;
+    count++;
+  });
+  const avg = total / count;
+  const obj = {
+    average: parseFloat(avg).toFixed(2),
+    min: Math.min(...arr),
+    max: Math.max(...arr),
+    length: arr.length,
+  };
+  return obj;
 }
 
 // module.exports = capitalize;
 // module.exports = reverseString;
 // module.exports = calculator;
-module.exports = cipher;
+// module.exports = cipher;
+module.exports = analyzeArray;
