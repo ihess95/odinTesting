@@ -1,4 +1,4 @@
-const cypher = require("./app");
+const cipher = require("./app");
 
 // test("makes first letter capitalized", () => {
 //   expect(func("string")).toBe("String");
@@ -32,6 +32,9 @@ const cypher = require("./app");
 //   expect(calculator(40, 4, "/")).toBe(10);
 // });
 
-test("returns encoded text", () => {
-  expect(cipher("caesar"));
+test("returns input unchanged", () => {
+  expect(cipher("caesar", 0)).toBe("caesar");
+});
+test("returns input shifted by 1", () => {
+  expect(cipher("caesar", 1)).toBe("caesar");
 });

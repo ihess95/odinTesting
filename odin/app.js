@@ -22,7 +22,15 @@
 //   }
 // }
 
-function cipher(input, offset) {}
+function cipher(input, offset) {
+  const alpha = "abcdefghijklmnopqrstuvwxyz";
+  let shifted = "";
+  for (let i = 0; i < alpha.length; i++) {
+    let n = (i + offset) % alphabet.length;
+    shifted += alpha[n];
+  }
+  return input;
+}
 
 // module.exports = capitalize;
 // module.exports = reverseString;
